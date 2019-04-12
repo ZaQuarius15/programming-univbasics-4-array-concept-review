@@ -1,4 +1,4 @@
-# Array Concept Review
+# Array Concepts
 
 ## Learning Goals
 
@@ -12,18 +12,17 @@
 
 ## Introduction
 
-Much of _life_ is understood by grouping things together based on
+Much of life is understood by grouping things together based on
 a common characteristic. For instance, here are some groups you might have
 heard of:
 
-- Family last name (The Bradys)
-- Hogwarts House (Slytherins)
+- Family last name (The Simpsons)
 - Band name (e.g. The Beatles)
 - Grocery list
 
 In most programming languages, the thing for storing a collection is called an
 "array". Arrays, as we'll learn, can also be used to order the things in the
-collection ("get the youngest Brady" or "most senior Slytherin").
+collection ("get the youngest Simpson" or "last grocery item").
 
 Working with collections is one of the most important tools to master in your
 programming career.
