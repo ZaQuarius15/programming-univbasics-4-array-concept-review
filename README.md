@@ -1,4 +1,4 @@
-# Array Concept Review
+# Array Concepts
 
 ## Learning Goals
 
@@ -12,31 +12,30 @@
 
 ## Introduction
 
-Much of _life_ is understood by grouping things together based on
+Much of life is understood by grouping things together based on
 a common characteristic. For instance, here are some groups you might have
 heard of:
 
-- Family last name (The Bradys)
-- Hogwarts House (Slytherins)
+- Family last name (The Simpsons)
 - Band name (e.g. The Beatles)
 - Grocery list
 
 In most programming languages, the thing for storing a collection is called an
 "array". Arrays, as we'll learn, can also be used to order the things in the
-collection ("get the youngest Brady" or "most senior Slytherin").
+collection ("get the youngest Simpson" or "last grocery item").
 
 Working with collections is one of the most important tools to master in your
 programming career.
 
 ## Recognize Array As a Core Programming Tool
 
-The bulk of **_all_** programming work is taking a inputs, doing some change to
-them (combining them, filtering them, mushing them together, etc.), and
+The bulk of **_all_** programming work is taking inputs, doing some change to
+them (combining them, filtering them, attaching them together, etc.), and
 producing a new output.
 
 The data needed as input for a process **or** made as output by running a
 process needs a place to live. An array allows programmers to create those
-places **and** say to each other "there are a bunch of individuals here, but,
+places **and** say to each other: "there are a bunch of individuals here, but,
 together, they make up something else, a _collection_, and knowing that fact is
 important."
 
@@ -52,7 +51,7 @@ _data structures_, it has rules and we'll explore them in this lesson.
 
 Let's establish an example for the rest of this lesson: the Shark Family as
 ordered by age, youngest to oldest. To keep things simple, we'll express this
-list in English not in any programming language.
+list in English, not in any programming language.
 
 1.  "Baby Shark"
 2.  "Mama Shark"
@@ -76,18 +75,11 @@ In our example, we might say that in the lowest index (`1`) of the "Shark
 Family" array, we have "Baby Shark." In the highest index (`6`) of the "Shark
 Family" array, we have "Grandpa Shark."
 
-Some programming languages start counting the first element at `1`. Most start
-counting the first element at `0`. Ruby, JavaScript, Python and Java all index
-arrays starting at `0`. Lua, Smalltalk and Fortran start indexing at `1`.
-Languages that start array indexing with `0` are called "zero-indexed."
-Languages that start array indexing with `1` are called "one-indexed."
-
-Some languages (like Ruby) will let you use a negative index to go "from the
-last position" other languages (like JavaScript) will not let you do this!
-
-> **Aside**: Some people will tell you that languages that start arrays at `1`
-> are "stupid." Some very bright people have done amazing things with "1-index"
-> languages (like putting mankind on the moon or building the Boeing 747).
+> **Aside**: Some programming languages start counting the first element at `1`.
+> Most start counting the first element at `0`. Ruby, JavaScript, Python and Java
+> all index arrays starting at `0`. Lua, Smalltalk and Fortran start indexing at
+> `1`. Languages that start array indexing with `0` are called "zero-indexed."
+> Languages that start array indexing with `1` are called "one-indexed."
 
 ## Recognize Array Core Property: Ordering
 
@@ -170,7 +162,7 @@ The following code creates an `Array` and assigns it to the variable name
 shark_family_by_age = [ "Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark" ]
 ```
 
-Ruby doesn't care if you put the code all on one line or separate it prettily:
+Ruby doesn't care if you put the code all on one line or separate it:
 
 ```ruby
 shark_family_by_age = [
@@ -220,7 +212,7 @@ manually, `Array`s tend to loaded as `Array` literals.
 
 In this lesson, we learned about the data structure `Array`. From iPhone to
 Java to Python, nearly every programming language has something like an
-`Array`.  Arrays are composed of _elements_ which are accessed by an _index_.
+`Array`. Arrays are composed of _elements_ which are accessed by an _index_.
 Indexes move upward from `0` in Ruby and JavaScript. Arrays are often displayed
 in programming documentation in _array literal syntax_ which is brackets (`[]`)
 filled with _elements_ separated by `,`s. Array [literal][] syntax can also be
