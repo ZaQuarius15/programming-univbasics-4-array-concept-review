@@ -12,9 +12,8 @@
 
 ## Introduction
 
-Much of life is understood by grouping things together based on
-a common characteristic. For instance, here are some groups you might have
-heard of:
+Much of life is understood by grouping things together based on a common
+characteristic. For instance, here are some groups you might have heard of:
 
 - Family last name (The Simpsons)
 - Band name (e.g. The Beatles)
@@ -24,26 +23,24 @@ In most programming languages, the thing for storing a collection is called an
 "array". Arrays, as we'll learn, can also be used to order the things in the
 collection ("get the youngest Simpson" or "last grocery item").
 
-Working with collections is one of the most important tools to master in your
+Working with arrays is one of the most important tools to master in your
 programming career.
 
 ## Recognize Array As a Core Programming Tool
 
 The bulk of **_all_** programming work is taking inputs, doing some change to
 them (combining them, filtering them, attaching them together, etc.), and
-producing a new output.
+producing new output. 
 
-The data needed as input for a process **or** made as output by running a
-process needs a place to live. An array allows programmers to create those
-places **and** say to each other: "there are a bunch of individuals here, but,
-together, they make up something else, a _collection_, and knowing that fact is
-important."
+An array allows programmers
 
-When programmers wish to communicate that the _collection_ is important they
-use a _data structure_: a thing that structures data based on rules. The array
-is one of the most common and most essential data structures. It allows
-programmers to create a group and assign it to a variable name. But, like all
-_data structures_, it has rules and we'll explore them in this lesson.
+1. To create variables that store the input or output
+2. To create variables that tell other programmers "there are a bunch of
+   individuals data bits here, but, together, they make up something else, a
+   _collection_, and knowing that fact is important."
+
+Like all _data structures_, the `Array` has rules and we'll explore them in
+this lesson.
 
 ### Example Data
 
@@ -51,7 +48,9 @@ _data structures_, it has rules and we'll explore them in this lesson.
 
 Let's establish an example for the rest of this lesson: the Shark Family as
 ordered by age, youngest to oldest. To keep things simple, we'll express this
-list in English, not in any programming language.
+list in English, not in any programming language. In English, we tend to start
+numbering (or _indexing_) at `1`, not `0`, but the reverse is true in the
+programming world.
 
 1.  "Baby Shark"
 2.  "Mama Shark"
@@ -75,12 +74,6 @@ In our example, we might say that in the lowest index (`1`) of the "Shark
 Family" array, we have "Baby Shark." In the highest index (`6`) of the "Shark
 Family" array, we have "Grandpa Shark."
 
-> **Aside**: Some programming languages start counting the first element at `1`.
-> Most start counting the first element at `0`. Ruby, JavaScript, Python and Java
-> all index arrays starting at `0`. Lua, Smalltalk and Fortran start indexing at
-> `1`. Languages that start array indexing with `0` are called "zero-indexed."
-> Languages that start array indexing with `1` are called "one-indexed."
-
 ## Recognize Array Core Property: Ordering
 
 Because arrays' _elements_ are _indexed_ by numbers that increase from a
@@ -90,8 +83,16 @@ order.
 Arrays can hold elements that aren't sorted (like "The Beatles" above), but
 programmers use the ordering property of the indexes to keep the collection in
 order. If the Shark family had a *new* baby shark we would put her in index 1
-and move all the other sharks up one. You'll have chance to work with the
-ordering property hands-on shortly.
+and move all the other sharks up one.
+
+1. "Newborn Baby Sister Shark"
+2. "Baby Shark"
+3. "Mama Shark"
+4. "Papa Shark"
+5. "Grandma Shark"
+6. "Grandpa Shark"
+
+You'll have the chance to work with the ordering property hands-on shortly.
 
 Let's look at our Shark family in the language of code.
 
@@ -111,7 +112,7 @@ In Ruby, we can print out an Array's contents with `p` and the name of the
 ```
 
 Ruby prints out the `Array` by putting square-brackets (`[]`) at the beginning
-and end of the `Array`. Between the brackets it lists each of the elements,
+and end of the `Array`. Between the brackets, it lists each of the elements,
 separated by commas (`,`). It _does not_ show the indexes of each of the
 elements.
 
@@ -150,7 +151,7 @@ Ruby has two ways to create `Array`s from scratch:
 
 Because reading arrays as lists of elements separated by `,` and enclosed by
 `[]` is so intuitive, Ruby added the ability to _create_ an `Array` by entering
-the output, like you saw above, _in_ literally. An `Array` [Literal][literal] is
+the output as you saw above, _in_ literally. An `Array` [Literal][literal] is
 a list of elements, separated by `,` and, you guessed it, enclosed by `[]`.
 
 The following code creates an `Array` and assigns it to the variable name
@@ -204,9 +205,7 @@ p batman_song #=> ["na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-"
 p "Batman!" #=> "Batman!"
 ```
 
-In all seriousness, most `Array`s are created from some data source (read from
-a database, read from a file, retrieved off of the internet). When typed in
-manually, `Array`s tend to loaded as `Array` literals.
+> **CRITICAL TAKEAWAY** `Array`s tend to loaded as `Array` literals.
 
 ## Conclusion
 
