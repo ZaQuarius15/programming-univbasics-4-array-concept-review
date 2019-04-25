@@ -7,8 +7,6 @@
 - Recognize array vocabulary word: Index
 - Recognize array core property: Ordering
 - View an `Array` in Ruby
-- Access Array Elements Through Bracket-Notation in Ruby
-- Create Arrays in Ruby
 
 ## Introduction
 
@@ -24,7 +22,8 @@ In most programming languages, the thing for storing a collection is called an
 collection ("get the youngest Simpson" or "last grocery item").
 
 Working with arrays is one of the most important tools to master in your
-programming career.
+programming career. In this lesson we'll make sure we know the vocabulary for
+working with arrays.
 
 ## Recognize Array As a Core Programming Tool
 
@@ -120,93 +119,6 @@ Looking at this output, we can see that there are 5 shark family members. At
 the lowest index, or "index 0" of `SHARK_FAMILY`, is "Baby Shark." At the
 largest index, or "index 4" of `SHARK_FAMILY`, is "Grandpa Shark."
 
-## Access Array Elements Through Bracket-Notation in Ruby
-
-We can get a single element by use of _bracket notation_. Programmers use
-_bracket notation_ instead of saying something like "index 2 of
-`SHARK_FAMILY`." The general form is: `Array_Name[index]`.
-
-```ruby
-SHARK_FAMILY[0] #=> "Baby Shark"
-SHARK_FAMILY[2] #=> "Papa Shark"
-SHARK_FAMILY[-1] #=> "Grandpa Shark"
-```
-
-> **TYPOGRAPHICAL NOTE** When you see `#=>` it means "this is what the
-> programming language returns. It's a common syntax for helping programmers
-> who are reading documentation understand how something works. You'll see it a
-> lot in technical documentation.
-
-## Create Arrays in Ruby
-
-OK, now that we've learned to work with Ruby `Arrays` that are created for us,
-by printing them out and accessing their elements, let's make our own `Array`.
-
-Ruby has two ways to create `Array`s from scratch:
-
-- Array literal syntax
-- `Array.new`
-
-### Array Literal Syntax
-
-Because reading arrays as lists of elements separated by `,` and enclosed by
-`[]` is so intuitive, Ruby added the ability to _create_ an `Array` by entering
-the output as you saw above, _in_ literally. An `Array` [Literal][literal] is
-a list of elements, separated by `,` and, you guessed it, enclosed by `[]`.
-
-The following code creates an `Array` and assigns it to the variable name
-`shark_family_by_age`.
-
-**_This is the most common way to create `Array`s from scratch._**
-
-```ruby
-shark_family_by_age = [ "Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark" ]
-```
-
-Ruby doesn't care if you put the code all on one line or separate it:
-
-```ruby
-shark_family_by_age = [
-  Baby Shark,
-  Mama Shark,
-  Papa Shark,
-  Grandma Shark,
-  Grandpa Shark ]
-```
-
-Programmers sometimes write their `Array` literals to communicate something to
-other programmers reading the code:
-
-```ruby
-# Generations per row
-shark_family_by_age = [
-  Baby Shark,
-  Mama Shark, Papa Shark,
-  Grandma Shark, Grandpa Shark
-]
-```
-
-### Array.new Syntax
-
-Consulting the [`Array` documentation][array doc] for `new` we see that we can
-create `Array`s using a constructor method called `Array.new`. To keep things
-simple, we'll not go into using this method other than to say:
-
-1. It exists and you might encounter it
-2. It's very useful for when you want to create an `Array` with a specific
-   number of elements and, optionally, want to set them all to a value
-
-As an example, you can make the 1960's vintage "Batman" TV show [theme][batman]
-song using the `Array` constructor method.
-
-```ruby
-batman_song = Array.new(16, "na-")
-p batman_song #=> ["na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-"]
-p "Batman!" #=> "Batman!"
-```
-
-> **CRITICAL TAKEAWAY** `Array`s tend to loaded as `Array` literals.
-
 ## Conclusion
 
 In this lesson, we learned about the data structure `Array`. From iPhone to
@@ -214,9 +126,7 @@ Java to Python, nearly every programming language has something like an
 `Array`. Arrays are composed of _elements_ which are accessed by an _index_.
 Indexes move upward from `0` in Ruby and JavaScript. Arrays are often displayed
 in programming documentation in _array literal syntax_ which is brackets (`[]`)
-filled with _elements_ separated by `,`s. Array [literal][] syntax can also be
-used to create Arrays. A lesser-used, but very useful, tool for creating
-`Array`s is the `Array.new` method of Ruby.
+filled with _elements_ separated by `,`s. 
 
 ## Resources
 
