@@ -30,7 +30,7 @@ programming career.
 
 The bulk of **_all_** programming work is taking inputs, doing some change to
 them (combining them, filtering them, attaching them together, etc.), and
-producing a new output. 
+producing new output. 
 
 An array allows programmers
 
@@ -48,7 +48,7 @@ this lesson.
 
 Let's establish an example for the rest of this lesson: the Shark Family as
 ordered by age, youngest to oldest. To keep things simple, we'll express this
-list in English, not in any programming language. In English we tend to start
+list in English, not in any programming language. In English, we tend to start
 numbering (or _indexing_) at `1`, not `0`, but the reverse is true in the
 programming world.
 
@@ -92,7 +92,7 @@ and move all the other sharks up one.
 5. "Grandma Shark"
 6. "Grandpa Shark"
 
-You'll have chance to work with the ordering property hands-on shortly.
+You'll have the chance to work with the ordering property hands-on shortly.
 
 Let's look at our Shark family in the language of code.
 
@@ -112,7 +112,7 @@ In Ruby, we can print out an Array's contents with `p` and the name of the
 ```
 
 Ruby prints out the `Array` by putting square-brackets (`[]`) at the beginning
-and end of the `Array`. Between the brackets it lists each of the elements,
+and end of the `Array`. Between the brackets, it lists each of the elements,
 separated by commas (`,`). It _does not_ show the indexes of each of the
 elements.
 
@@ -151,7 +151,7 @@ Ruby has two ways to create `Array`s from scratch:
 
 Because reading arrays as lists of elements separated by `,` and enclosed by
 `[]` is so intuitive, Ruby added the ability to _create_ an `Array` by entering
-the output, like you saw above, _in_ literally. An `Array` [Literal][literal] is
+the output as you saw above, _in_ literally. An `Array` [Literal][literal] is
 a list of elements, separated by `,` and, you guessed it, enclosed by `[]`.
 
 The following code creates an `Array` and assigns it to the variable name
