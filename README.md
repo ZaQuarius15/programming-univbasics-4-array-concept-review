@@ -2,13 +2,13 @@
 
 ## Learning Goals
 
-- Recognize array as a core programming tool
-- Recognize array vocabulary word: Element
-- Recognize array vocabulary word: Index
-- Recognize array core property: Ordering
+- Recognize `Array` as a core programming tool
+- Recognize `Array` vocabulary word: Element
+- Recognize `Array` vocabulary word: Index
+- Recognize `Array` core property: Ordering
 - View an `Array` in Ruby
-- Access Array Elements Through Bracket-Notation in Ruby
-- Create Arrays in Ruby
+- Access `Array` Elements Through Bracket-Notation in Ruby
+- Create `Array`s in Ruby
 
 ## Introduction
 
@@ -20,11 +20,12 @@ characteristic. For instance, here are some groups you might have heard of:
 - Grocery list
 
 In most programming languages, the thing for storing a collection is called an
-"array". Arrays, as we'll learn, can also be used to order the things in the
+`Array`. `Array`s, as we'll learn, can also be used to order the things in the
 collection ("get the youngest Simpson" or "last grocery item").
 
-Working with arrays is one of the most important tools to master in your
-programming career.
+***Working with `Array`s is one of the most important tools to master in your
+programming career.*** Feel free to use this README as a reference sheet as
+you're learning to code.
 
 ## Recognize Array As a Core Programming Tool
 
@@ -32,7 +33,7 @@ The bulk of **_all_** programming work is taking inputs, doing some change to
 them (combining them, filtering them, attaching them together, etc.), and
 producing new output. 
 
-An array allows programmers
+An `Array` allows programmers:
 
 1. To create variables that store the input or output
 2. To create variables that tell other programmers "there are a bunch of
@@ -60,27 +61,27 @@ programming world.
 
 ## Recognize Array Vocabulary Word: Element
 
-An individual member of an array is called an _element_. In our example, "Baby
-Shark" is an _element_. "Grandma Shark" is also an element. All arrays are
-collections of _elements_.
+An individual member of an `Array` is called an _element_. In our example,
+"Baby Shark" is an _element_. "Grandma Shark" is also an element. All `Array`s
+are collections of _elements_.
 
 ## Recognize Array Vocabulary Word: Index
 
 Earlier we mentioned that _data structures_ have rules. **The main rule of the
-array data structure is that the individual _elements_ in an array can be
-"pointed to" by providing a number (Integer) and the name of the array.**
+`Array` data structure is that the individual _elements_ in an `Array` can be
+"pointed to" by providing a number (Integer) and the name of the `Array`.**
 
 In our example, we might say that in the lowest index (`1`) of the "Shark
-Family" array, we have "Baby Shark." In the highest index (`6`) of the "Shark
-Family" array, we have "Grandpa Shark."
+Family" `Array`, we have "Baby Shark." In the highest index (`6`) of the "Shark
+Family" `Array`, we have "Grandpa Shark."
 
 ## Recognize Array Core Property: Ordering
 
-Because arrays' _elements_ are _indexed_ by numbers that increase from a
-starting number by whole numbers, arrays can be used to keep _elements_ in
+Because `Array`s' _elements_ are _indexed_ by numbers that increase from a
+starting number by whole numbers, `Array`s can be used to keep _elements_ in
 order.
 
-Arrays can hold elements that aren't sorted (like "The Beatles" above), but
+`Array`s can hold elements that aren't sorted (like "The Beatles" above), but
 programmers use the ordering property of the indexes to keep the collection in
 order. If the Shark family had a *new* baby shark we would put her in index 1
 and move all the other sharks up one.
@@ -94,7 +95,8 @@ and move all the other sharks up one.
 
 You'll have the chance to work with the ordering property hands-on shortly.
 
-Let's look at our Shark family in the language of code.
+Let's look at our Shark family in the language of code. The biggest change
+here, of course, will be that indexing will start at `0`, like computers like.
 
 ## View an `Array` in Ruby
 
@@ -114,7 +116,8 @@ In Ruby, we can print out an Array's contents with `p` and the name of the
 Ruby prints out the `Array` by putting square-brackets (`[]`) at the beginning
 and end of the `Array`. Between the brackets, it lists each of the elements,
 separated by commas (`,`). It _does not_ show the indexes of each of the
-elements.
+elements. We'll have to count those for ourselves (it's not so bad, you'll
+see!).
 
 Looking at this output, we can see that there are 5 shark family members. At
 the lowest index, or "index 0" of `SHARK_FAMILY`, is "Baby Shark." At the
@@ -124,12 +127,15 @@ largest index, or "index 4" of `SHARK_FAMILY`, is "Grandpa Shark."
 
 We can get a single element by use of _bracket notation_. Programmers use
 _bracket notation_ instead of saying something like "index 2 of
-`SHARK_FAMILY`." The general form is: `Array_Name[index]`.
+`SHARK_FAMILY`." The general form is: `array_Name[index]`. The index should be
+an `Integer` and it can be the _constant_ (`13`) or a calculation that returns
+that `Integer` (`2 * 7 - 1`).
 
 ```ruby
 SHARK_FAMILY[0] #=> "Baby Shark"
 SHARK_FAMILY[2] #=> "Papa Shark"
 SHARK_FAMILY[-1] #=> "Grandpa Shark"
+SHARK_FAMILY[3 - 4] #=> "Grandpa Shark"
 ```
 
 > **TYPOGRAPHICAL NOTE** When you see `#=>` it means "this is what the
@@ -137,9 +143,9 @@ SHARK_FAMILY[-1] #=> "Grandpa Shark"
 > who are reading documentation understand how something works. You'll see it a
 > lot in technical documentation.
 
-## Create Arrays in Ruby
+## Create `Array`s in Ruby
 
-OK, now that we've learned to work with Ruby `Arrays` that are created for us,
+OK, now that we've learned to work with Ruby `Arrays` that are created for us
 by printing them out and accessing their elements, let's make our own `Array`.
 
 Ruby has two ways to create `Array`s from scratch:
@@ -149,15 +155,18 @@ Ruby has two ways to create `Array`s from scratch:
 
 ### Array Literal Syntax
 
-Because reading arrays as lists of elements separated by `,` and enclosed by
+Because reading `Array`s as lists of elements separated by `,` and enclosed by
 `[]` is so intuitive, Ruby added the ability to _create_ an `Array` by entering
-the output as you saw above, _in_ literally. An `Array` [Literal][literal] is
-a list of elements, separated by `,` and, you guessed it, enclosed by `[]`.
+the same thing back in. An `Array` [Literal][literal] is a list of elements,
+separated by `,` and, you guessed it, enclosed by `[]` that is used to create
+an `Array`.
+
+Image
 
 The following code creates an `Array` and assigns it to the variable name
 `shark_family_by_age`.
 
-**_This is the most common way to create `Array`s from scratch._**
+***_This is the most common way to create `Array`s from scratch._***
 
 ```ruby
 shark_family_by_age = [ "Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark" ]
@@ -205,17 +214,19 @@ p batman_song #=> ["na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-", "na-"
 p "Batman!" #=> "Batman!"
 ```
 
-> **CRITICAL TAKEAWAY** `Array`s tend to loaded as `Array` literals.
+> **CRITICAL TAKEAWAY** `Array`s tend to be defined as `Array` literals or
+> "read in" from somewhere (which we haven't covered yet) like a file. Make
+> sure you master the "literal" format.
 
 ## Conclusion
 
 In this lesson, we learned about the data structure `Array`. From iPhone to
 Java to Python, nearly every programming language has something like an
-`Array`. Arrays are composed of _elements_ which are accessed by an _index_.
-Indexes move upward from `0` in Ruby and JavaScript. Arrays are often displayed
-in programming documentation in _array literal syntax_ which is brackets (`[]`)
+`Array`. `Array`s are composed of _elements_ which are accessed by an _index_.
+Indexes move upward from `0` in most languages. `Array`s are often displayed
+in programming documentation in _`Array` literal syntax_ which is brackets (`[]`)
 filled with _elements_ separated by `,`s. Array [literal][] syntax can also be
-used to create Arrays. A lesser-used, but very useful, tool for creating
+used to create `Array`s. A lesser-used, but very useful, tool for creating
 `Array`s is the `Array.new` method of Ruby.
 
 ## Resources
