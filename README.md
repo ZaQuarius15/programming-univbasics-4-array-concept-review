@@ -101,11 +101,18 @@ In this example, imagine that the constant `SHARK_FAMILY` points to an `Array`
 and has already been defined for us (we'll learn to define `Array`s in a
 moment).
 
-In Ruby, we can print out an Array's contents with `p` and the name of the
-`Array`. Here, in IRB, we are printing out `SHARK_FAMILY`:
+In Ruby, we can print out an `Array`'s contents with `p` and the name of the
+`Array`. If we had the following array entered into IRB:
 
 ```ruby
-2.3.3 :003 > p SHARK_FAMILY
+2.3.3 :003 > SHARK_FAMILY = ["Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark"]
+ => ["Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark"]
+```
+
+We could use `p` to print out `SHARK_FAMILY`:
+
+```ruby
+2.3.3 :004 > p SHARK_FAMILY
 ["Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark"]
  => ["Baby Shark", "Mama Shark", "Papa Shark", "Grandma Shark", "Grandpa Shark"]
 ```
